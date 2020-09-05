@@ -22,6 +22,6 @@ class BigoenApiBridgeExtension extends Extension
     {
         // create loaders.
         $loader = new PhpFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('general.php');
+        $loader->load('services.php');
     }
 }
