@@ -1,0 +1,23 @@
+{
+	"name": "bigoen/api-bridge-bundle",
+	"type": "php",
+	"description": "APi bridge bundle for symfony api projects.",
+	"license": "LGPL-3.0",
+	"authors": [
+		{
+			"name": "Şafak Saylam",
+			"homepage": "https://safaksaylam.com",
+			"email": "safak@bigoen.com"
+		}
+	],
+	"require": {
+		"php": "^7.4",
+		"api-platform/core": "*"
+	},
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"Bigoen\\ApiBridgeBundle\\": "src/"
+		}
+	}
+}
