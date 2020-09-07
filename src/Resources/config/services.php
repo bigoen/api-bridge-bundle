@@ -9,4 +9,8 @@ return function (ContainerConfigurator $configurator) {
     $services
         ->load('Bigoen\\ApiBridge\\HttpClient\\', '../../../../api-bridge/src/HttpClient/*')
         ->arg('$httpClient', service('http_client'));
+
+    $services
+        ->load('Bigoen\\ApiBridge\\Bridge\\ApiPlatform\\HttpClient\\', '../../../../api-bridge/src/Bridge/ApiPlatform/HttpClient/*')
+        ->arg('$httpClient', service('http_client'));
 };
