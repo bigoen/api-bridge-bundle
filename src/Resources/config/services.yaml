@@ -1,0 +1,10 @@
+services:
+    Bigoen\ApiBridge\HttpClient\:
+        resource: '../../../../api-bridge/src/HttpClient/*'
+        arguments:
+            $httpClient: '@http_client'
+
+    Bigoen\ApiBridge\Bridge\ApiPlatform\HttpClient\:
+        resource: '../../../../api-bridge/src/Bridge/ApiPlatform/HttpClient/*'
+        arguments:
+            $httpClient: '@http_client'
