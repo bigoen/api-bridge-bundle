@@ -8,3 +8,6 @@ services:
         class: 'Bigoen\ApiBridge\Bridge\ApiPlatform\HttpClient\JsonldClient'
         arguments:
             $httpClient: '@http_client'
+
+    Bigoen\ApiBridge\HttpClient\SimpleClient: '@api_bridge.simple_client'
+    Bigoen\ApiBridge\Bridge\ApiPlatform\HttpClient\JsonldClient: '@api_bridge.api_platform.jsonld_client'
